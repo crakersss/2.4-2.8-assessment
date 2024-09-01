@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 7%; /* To account for fixed navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7%;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.head{
+    padding: 2%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-bottom: 7%;
+}
+
+/* Location Title */
+.location-title {
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.location-title h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/* Brief Description */
+.brief-description {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.brief-description p {
+    font-size: 18px;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    margin-top: 0%;
+    text-align: center;
+}
+
+.image-gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1% 0;
+    margin: 4% 3%;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    max-width: 100%;
+}
+
+/* Detailed Content */
+.detailed-content {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.detailed-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.detailed-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        flex-direction: column;
+    }
+    .gallery-grid img {
+        width: 80%;
+    }
+    
+    .location-title h1 {
+        font-size: 28px;
+    }
+    
+    .brief-description p,
+    .detailed-content p {
+        font-size: 16px;
+    }
+}

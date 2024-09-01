@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar with Scrolling Text Feature -->
+    <nav class="navbar">
+        <div class="table">
+            <a href="index.html" class="nav-link">
+                <div class="monitor-wrapper">
+                    <div class="monitor">
+                        <p>Dylan's Travel Portfolio</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+
+
+    <!-- Image Gallery Section -->
+    <section id="gallery">
+        <div class="gallery-grid">
+            <img src="images/index/france-front.jpg" alt="Image 1">
+            <img src="images/index/japan-front.jpg" alt="Image 2">
+            <img src="images/index/usa-front.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <!-- SVG Map Section -->
+    <section id="map-container" class="map-section">
+        <h2>Explore the Map</h2>
+        <p>Click on a highlighted country to see learn about my experiences at each location</p>
+
+        <object id="svg-map" type="image/svg+xml" data="world.svg" width="100%" height="auto">
+            Your browser does not support SVG
+        </object>
+    </section>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="js/map-interactions.js"></script>
+</body>
+</html>

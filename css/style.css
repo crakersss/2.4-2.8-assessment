@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: .5%;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7%;
+    
+}
+
+
+
+/* Image Gallery */
+.gallery-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1% 0;
+    margin: 4% 3%;
+    margin-top: 8%;
+}
+
+#gallery img {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+/* SVG Map Section */
+.map-section {
+    padding: 40px 20px;
+    background-color: #e2e8f0;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#svg-map {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2%;
+    width: 1000px;
+    height: 660px;
+    box-shadow: 0px 0px 11px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .animated-text-section h2 {
+        font-size: 24px;
+    }
+
+    .gallery-grid img {
+        max-width: 100%;
+    }
+}

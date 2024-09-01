@@ -1,0 +1,50 @@
+
+
+/* Scrolling Nav Bar */
+.table {
+  width: 40%; 
+  height: 100%; 
+}
+
+.monitor-wrapper {
+  width: 90%;
+  height: 90%;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monitor {
+  display: flex;
+  align-items: center;
+  width: 97%; 
+  height: 75%; 
+  background-color: grey;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.monitor p {
+  font-family: 'VT323', monospace;
+  font-size: 270%; 
+  position: relative;
+  display: inline-block;
+  animation: move 13s infinite linear;
+  color: white;
+  
+}
+
+@keyframes move {
+  from {
+      left: 100%;
+  }
+  to {
+      left: -100%;
+  }
+}
+
+.nav-link{
+  text-decoration: none;
+}
