@@ -3,19 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e1f2f7; /* Updated to match country-style.css */
     color: #333;
     line-height: 1.6;
 }
 
-
-
 /* Navigation Bar */
 .navbar {
-    background-color: #333;
+    background-color: #7fc7dd; /* Updated to match country-style.css */
     color: white;
     padding-top: 1%;
-    padding-bottom: .5%;
+    padding-bottom: 0.5%;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -24,10 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 7%;
-    
 }
-
-
 
 /* Image Gallery */
 .gallery-grid {
@@ -37,9 +32,10 @@ body {
     padding: 1% 0;
     margin: 4% 3%;
     margin-top: 8%;
+    flex-wrap: wrap;
 }
 
-#gallery img {
+.gallery-grid img {
     width: 30%;
     margin: 10px;
     box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.1);
@@ -49,13 +45,16 @@ body {
 /* SVG Map Section */
 .map-section {
     padding: 40px 20px;
-    background-color: #e2e8f0;
+    background-color: #fde1e9; /* Updated to match country-style.css */
     text-align: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Matching white box style */
+    border-radius: 6px;
 }
 
 .map-section h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #333; /* Consistent title color */
 }
 
 #svg-map {
@@ -77,5 +76,13 @@ body {
 
     .gallery-grid img {
         max-width: 100%;
+    }
+    
+    .gallery-grid {
+        flex-direction: column;
+    }
+    
+    .map-section h2 {
+        font-size: 22px;
     }
 }
