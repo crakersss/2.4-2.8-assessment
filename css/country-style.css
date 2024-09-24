@@ -3,18 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e1f2f7;
+    background-color: #e7e7e7;
     color: #333;
     line-height: 1.6;
     padding-top: 7%; /* To account for fixed navbar */
+    margin-bottom: 5%;
+    
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #7fc7dd;
-    color: white;
-    padding-top: 1%;
-    padding-bottom: .5%;
+    padding: 0%;
+    margin: 0%;
+    
+    background-color: #e7e7e7;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -23,6 +25,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 7%;
+    
+    border-bottom: 2px solid #22196b;
+    
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.navbar h1 {
+    font-size: 2rem; /* Increase the font size */
+    color: #22196b;
+    margin: 0;
+    padding: 0%;
+    margin-top: 1%;
 }
 
 /* Content Container */
@@ -34,7 +50,7 @@ body {
 
 .head{
     padding: 2%;
-    background-color: #fde1e9;
+    background-color: #e7e7e7;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     margin-bottom: 7%;
@@ -49,7 +65,7 @@ body {
 
 .location-title h1 {
     font-size: 36px;
-    color: #333;
+    color: #22196b;
     margin-bottom: 0;
 }
 
@@ -62,7 +78,7 @@ body {
 
 .brief-description p {
     font-size: 18px;
-    color: #555;
+    color: #22196b;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -76,7 +92,7 @@ body {
 .image-gallery h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
+    color: #22196b;
 }
 
 .gallery-grid {
@@ -101,20 +117,20 @@ body {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
-    background-color: #fde1e9;
+    background-color: #e7e7e7;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 }
 
 .detailed-content h2 {
     font-size: 28px;
-    color: #333;
+    color: #22196b;
     margin-bottom: 20px;
 }
 
 .detailed-content p {
     font-size: 18px;
-    color: #555;
+    color: #22196b;
     line-height: 1.8;
 }
 

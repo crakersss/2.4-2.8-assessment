@@ -21,12 +21,12 @@
 		}
 
 		/* Specific color for countries */
-		#AU, #US, #FR, #JP, #GB, #NZ {
-    		fill: rgb(114, 114, 219);
+		#US, #FR, #JP, #GB{
+    		fill: #594ad5;
 		}	
 
-		#AU:hover, #US:hover, #FR:hover, #JP:hover, #GB:hover, #NZ:hover {
-    		fill: cornflowerblue;
+		#US:hover, #FR:hover, #JP:hover, #GB:hover{
+    		fill: #22196b;
 
 
 		}

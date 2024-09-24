@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Blog</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,15 +13,18 @@
     <!-- Navigation Bar with Scrolling Text Feature -->
     <nav class="navbar">
         <div class="table">
-            <a href="index.html" class="nav-link">
-                <div class="monitor-wrapper">
-                    <div class="monitor">
-                        <p>Dylan's Travel Portfolio</p>
-                    </div>
-                </div>
-            </a>
+            <h1>Dylan's Travel Portfolio</h1>
+        </div>
+        <div class="nav-links">
+            <a href="/locations/gb.html" class="nav-link">United Kingdom</a>
+            <a href="/locations/jp.html" class="nav-link">Japan</a>
+            <a href="/locations/us.html" class="nav-link">USA</a>
+            <a href="/locations/fr.html" class="nav-link">France</a>
+            <a href="index.html" class="nav-button">Home</a>
         </div>
     </nav>
+    
+    
 
 
 
@@ -37,7 +40,7 @@
     <!-- SVG Map Section -->
     <section id="map-container" class="map-section">
         <h2>Explore the Map</h2>
-        <p>Click on a highlighted country to see learn about my experiences at each location</p>
+        <p>Click on a highlighted country to see and hear about my experiences at each location</p>
 
         <object id="svg-map" type="image/svg+xml" data="world.svg" width="100%" height="auto">
             Your browser does not support SVG

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var svgObject = document.getElementById('svg-map');
     
     // List of country IDs that have corresponding HTML pages
-    const availableCountries = ['au', 'us', 'fr', 'jp', 'gb', 'nz']; // Add the IDs of countries with pages
+    const availableCountries = ['us', 'fr', 'jp', 'gb']; // Add the IDs of countries with pages
 
     svgObject.addEventListener('load', function() {
         var svgDoc = svgObject.contentDocument;
