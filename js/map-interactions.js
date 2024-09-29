@@ -1,35 +1,54 @@
 document.addEventListener('DOMContentLoaded', function() {
     var svgObject = document.getElementById('svg-map');
     
-    // List of country IDs that have corresponding HTML pages
-    const availableCountries = ['us', 'fr', 'jp', 'gb']; // Add the IDs of countries with pages
+    // List of available countries
+    const availableCountries = ['us', 'fr', 'jp', 'gb']; 
 
+    // Load the SVG
     svgObject.addEventListener('load', function() {
         var svgDoc = svgObject.contentDocument;
 
-        // Ensure the SVG content is correctly selected
         if (!svgDoc) {
             console.error('Failed to load SVG content.');
             return;
         }
 
-        // Select all countries (paths) within the SVG
         var countries = svgDoc.querySelectorAll('path');
         
+        // Popup element
+        var popup = document.getElementById('custom-popup');
+        var popupMessage = document.getElementById('popup-message');
+        var closeBtn = document.querySelector('.close-btn');
+        
+        // Function to show the popup
+        function showPopup(message) {
+            popupMessage.textContent = message;
+            popup.style.display = 'block';
+        }
+        
+        // Function to hide the popup
+        closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+        
+        // Close the popup if the user clicks outside of the popup content
+        window.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+
         countries.forEach(function(country) {
             country.addEventListener('click', function() {
-                var countryID = this.id.toLowerCase();  // Convert the ID to lowercase
+                var countryID = this.id.toLowerCase();
                 console.log('Country clicked:', countryID);
-
-                // Check if the country has a corresponding HTML page
+                
+                // Redirects user to country specefic page
                 if (availableCountries.includes(countryID)) {
-                    window.location.href = 'locations/' + countryID + '.html';  // Redirect to the country-specific page
+                    window.location.href = 'locations/' + countryID + '.html';
+                // If there is no availaible page
                 } else {
-                
-                
-                
-//add a popup to replace the web pop up "please select a highlighteed country"              
-                    alert('Page not available for ' + countryID.toUpperCase());  // Show an alert if the page doesn't exist
+                    showPopup('The country you have selected is unavailable. Please select a highlighted country.');
                 }
             });
         });

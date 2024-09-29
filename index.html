@@ -6,7 +6,7 @@
     <title>My Travel Blog</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
             <a href="/locations/jp.html" class="nav-link">Japan</a>
             <a href="/locations/us.html" class="nav-link">USA</a>
             <a href="/locations/fr.html" class="nav-link">France</a>
-            <a href="index.html" class="nav-button">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
         </div>
     </nav>
     
@@ -29,23 +29,32 @@
 
 
     <!-- Image Gallery Section -->
-    <section id="gallery">
+    <div id="gallery">
         <div class="gallery-grid">
             <img src="images/index/france-front.jpg" alt="Image 1">
             <img src="images/index/japan-front.jpg" alt="Image 2">
             <img src="images/index/usa-front.jpg" alt="Image 3">
         </div>
-    </section>
+    </div>
 
     <!-- SVG Map Section -->
     <section id="map-container" class="map-section">
         <h2>Explore the Map</h2>
         <p>Click on a highlighted country to see and hear about my experiences at each location</p>
 
-        <object id="svg-map" type="image/svg+xml" data="world.svg" width="100%" height="auto">
+        <object id="svg-map" type="image/svg+xml" data="world.svg">
             Your browser does not support SVG
         </object>
     </section>
+
+
+    <!-- Popup Modal HTML -->
+    <div id="custom-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p id="popup-message">Page not available.</p>
+        </div>
+    </div>
 
     <!-- Link to the external JavaScript file -->
     <script src="js/map-interactions.js"></script>

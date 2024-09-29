@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- (c) ammap.com | SVG map of World India - high -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<svg id="svg-map" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1000 650" preserveAspectRatio="xMidYMid meet">
 	<defs>
 
 	<style>
 	/* Base styling for the entire SVG map */
+
 		.land {
 			fill: lightgrey;
 			fill-opacity: 1;
@@ -16,17 +17,17 @@
 		/* Hover effect */
 		.land:hover {
 			fill: #6d6d6d;
-			transform: scale(1.005);    transform-origin: top;
+			transform: scale(1.002);    transform-origin: top;
 
 		}
 
 		/* Specific color for countries */
 		#US, #FR, #JP, #GB{
-    		fill: #594ad5;
+    		fill: #22196b;
 		}	
 
 		#US:hover, #FR:hover, #JP:hover, #GB:hover{
-    		fill: #22196b;
+    		fill: #594ad5;
 
 
 		}

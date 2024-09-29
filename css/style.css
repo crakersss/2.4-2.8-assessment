@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Outfit, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e7e7e7; /* Updated to match country-style.css */
+    background-color: #fff;
     color: #22196b;
     line-height: 1.6;
 }
@@ -29,15 +29,14 @@ body {
 /* SVG Map Section */
 .map-section {
     padding: 40px 20px;
-    background-color: #e7e7e7; /* Updated to match country-style.css */
+    background-color: #fff;
     text-align: center;
-    box-shadow: 0px 0px 50px 200px rgba(0, 0, 0, 0.1); /* Matching white box style */
 }
 
 .map-section h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #22196b; /* Consistent title color */
+    color: #22196b;
 }
 
 #svg-map {
@@ -51,21 +50,172 @@ body {
     border-radius: 6px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .animated-text-section h2 {
-        font-size: 24px;
-    }
+/* Popup Modal Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+  
+.popup-content {
+    font-size: 150%;
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    cursor: pointer;
+}
 
-    .gallery-grid img {
-        max-width: 100%;
-    }
-    
-    .gallery-grid {
-        flex-direction: column;
+/* Responsive Adjustments for phones (max-width 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
     }
     
     .map-section h2 {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    #svg-map {
+        width: 90%;
+        height: auto;
+    }
+
+    .gallery-grid {
+        margin: 0% 5%;
+        margin-top: 40%;
+    }
+
+    .gallery-grid img {
+        width: 90%;
+    }
+
+    .popup-content {
+        width: 80%;
+        font-size: 100%;
+    }
+}
+
+/* Responsive Adjustments for smaller screens (max-width 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 24px;
+    }
+    
+    .map-section h2 {
+        font-size: 18px;
+    }
+
+    #svg-map {
+        width: 90%;
+        height: auto;
+    }
+
+    .gallery-grid {
+        margin: 0% 5%;
+        margin-top: 15%;
+    }
+
+    .gallery-grid img {
+        width: 90%;
+    }
+
+    .popup-content {
+        width: 80%;
+        font-size: 100%;
+    }
+
+    .map-section h2 {
+        font-size: 30px;
+    }
+}
+
+/* Responsive Adjustments for medium screens (min-width 768px, max-width 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .map-section h2 {
+        font-size: 28px;
+    }
+
+    #svg-map {
+        width: 90%;
+        height: auto;
+    }
+
+    .gallery-grid img {
+        width: 40%;
+    }
+
+    .gallery-grid{
+        margin-top: 10%;
+    }
+}
+
+/* Responsive Adjustments for large screens (min-width 1440px) */
+@media (min-width: 1440px) {
+
+    body{
+        font-size: 30px;
+    }
+    .map-section h2 {
+        font-size: 36px;
+    }
+
+    #svg-map {
+        width: 90%;
+        height: auto;
+    }
+
+    .gallery-grid img {
+        width: 31%;
+    }
+
+    .popup-content {
+        width: 80%;
+        font-size: 24px;
+    }
+}
+
+/* Responsive Adjustments for extra large screens (min-width 1920px) */
+@media (min-width: 1920px) {
+    .map-section h2 {
+        font-size: 42px;
+    }
+
+    #svg-map {
+        width: 90%;
+        height: auto;
+    }
+
+    .gallery-grid {
+        margin-top: 10%;
+    }
+
+    .gallery-grid img {
+        width: 30%;
+    }
+
+    .popup-content {
+        width: 80%;
     }
 }
